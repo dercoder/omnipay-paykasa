@@ -110,16 +110,18 @@ class PurchaseRequest extends AbstractRequest
             'voucherCode',
             'transactionId',
             'customerId',
-            'currency',
-            'amount'
+            'currency'
         );
 
         $data = [
             'voucher_code'      => $this->getVoucherCode(),
             'customer_order_id' => $this->getTransactionId(),
-            'customer_id'       => $this->getCustomerId(),
-            'amount'            => $this->getAmount()
+            'customer_id'       => $this->getCustomerId()
         ];
+
+        if ($amount = $this->getAmount()) {
+            $data['amount'] = $amount;
+        }
 
         if ($customerIpAddress = $this->getCustomerIpAddress()) {
             $data['customer_ip_addr'] = $customerIpAddress;
