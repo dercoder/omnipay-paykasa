@@ -1,0 +1,12 @@
+HTTP/1.1 400 22
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Cache-Control: private
+Server: MPact Api Server
+x-request-id: 16v2w2k3r1d3z192e2b2i223D2wZ2T
+x-frame-options: DENY
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: Content-Type
+
+{"response_code":"22","response_message":"Invalid currency"}

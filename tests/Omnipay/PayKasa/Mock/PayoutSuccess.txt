@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Cache-Control: private
+Server: MPact Api Server
+x-request-id: 2r3Pd35131271E263f2s453RE3h1H
+x-frame-options: DENY
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: Content-Type
+
+{"voucher":{"serial":"9474707443953820","code":"1388184730567973","currency":"EUR","amount":12.43,"expiry_date":"2018-10-25T00:00:00.0000000","created_date":"2017-10-25T15:21:25.4104537Z"},"transaction_id":"VI-26347","customer_order_id":"TX2229777","response_code":"00","response_message":"Great success"}

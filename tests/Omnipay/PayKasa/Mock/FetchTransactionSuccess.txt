@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Cache-Control: private
+Server: MPact Api Server
+x-request-id: 2I44t2j283C1s142l25465ud321u
+x-frame-options: DENY
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: Content-Type
+
+{"transaction_request":{"id":"30033","transactionId":"VI-26348","customerOrderId":"TX2229777","amount":"12.43","currency":"EUR","status":"Successful","statusCode":"00","statusMessage":"Great success","requestDate":"2017-10-25T16:34:22.1379080"},"response_code":"00","response_message":"Great success"}

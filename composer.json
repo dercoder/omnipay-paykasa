@@ -1,0 +1,39 @@
+{
+  "name": "dercoder/omnipay-paykasa",
+  "type": "library",
+  "description": "PayKasa gateway for Omnipay payment processing library",
+  "keywords": [
+    "gateway",
+    "merchant",
+    "omnipay",
+    "pay",
+    "payment",
+    "paykasa",
+    "purchase"
+  ],
+  "homepage": "https://github.com/dercoder/omnipay-paykasa",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Fedra",
+      "email": "alexander.fedra@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\PayKasa\\": "src/"
+    }
+  },
+  "require": {
+    "omnipay/common": "^2.3"
+  },
+  "require-dev": {
+    "omnipay/tests": "~2.0",
+    "satooshi/php-coveralls": "1.0.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  }
+}

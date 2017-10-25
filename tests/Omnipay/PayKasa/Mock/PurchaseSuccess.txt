@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Cache-Control: private
+Server: MPact Api Server
+x-request-id: 1Wk46221331W162l3p251px3K3p2i
+x-frame-options: DENY
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: Content-Type
+
+{"transaction_id":"VR-17135","customer_order_id":"TX2229777","voucher_amount":"12.43","voucher_currency":"EUR","issuer_name":"XN5zj58q","voucher_issue_date":"2017-10-25T14:55:12Z","response_code":"00","response_message":"Great success"}
