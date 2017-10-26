@@ -7,7 +7,7 @@ use Omnipay\Tests\TestCase;
 class FetchTransactionResponseTest extends TestCase
 {
     /**
-     * @var PurchaseRequest
+     * @var FetchTransactionRequest
      */
     protected $request;
 

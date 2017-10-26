@@ -28,6 +28,7 @@ class GatewayTest extends GatewayTestCase
             'voucherCode'   => 1388185689033560
         ));
 
+        $this->assertInstanceOf('\Omnipay\PayKasa\Message\PurchaseRequest', $request);
         $this->assertSame('qbc10002', $request->getCustomerId());
         $this->assertSame(1388185689033560, $request->getVoucherCode());
     }
@@ -41,6 +42,7 @@ class GatewayTest extends GatewayTestCase
             'voucherType'   => 'Cash'
         ));
 
+        $this->assertInstanceOf('\Omnipay\PayKasa\Message\PayoutRequest', $request);
         $this->assertSame('Cash', $request->getVoucherType());
     }
 
@@ -51,7 +53,14 @@ class GatewayTest extends GatewayTestCase
             'transactionReference' => 'XXAACCD3231232'
         ));
 
+        $this->assertInstanceOf('\Omnipay\PayKasa\Message\FetchTransactionRequest', $request);
         $this->assertSame('TX5557666', $request->getTransactionId());
         $this->assertSame('XXAACCD3231232', $request->getTransactionReference());
+    }
+
+    public function testFetchVoucherProducts()
+    {
+        $request = $this->gateway->fetchVoucherProducts();
+        $this->assertInstanceOf('\Omnipay\PayKasa\Message\FetchVoucherProductsRequest', $request);
     }
 }

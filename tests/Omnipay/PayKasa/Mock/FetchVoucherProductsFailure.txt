@@ -1,0 +1,12 @@
+HTTP/1.1 401 40
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Cache-Control: private
+Server: MPact Api Server
+x-request-id: 3q2t2n1f1A3N2j132py3I1f2M1C2b1K
+x-frame-options: DENY
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: Content-Type
+
+{"response_code":"40","response_message":"Your credentials could not be verified Check your api token"}

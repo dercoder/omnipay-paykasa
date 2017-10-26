@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Cache-Control: private
+Server: MPact Api Server
+x-request-id: UaE3u3l1A2d162E3HFq2QR2d10
+x-frame-options: DENY
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: Content-Type
+
+{"voucher_products":[{"amount":"20.01","currency":"EUR","name":"20.01EUR","voucher_type":"Cash"},{"amount":"10.01","currency":"EUR","name":"10.01EUR","voucher_type":"Cash"},{"amount":"20.00","currency":"EUR","name":"20EUR","voucher_type":"PremiumCash"},{"amount":"10.00","currency":"EUR","name":"10EUR","voucher_type":"Cash"}],"response_code":"00","response_message":"Great success"}

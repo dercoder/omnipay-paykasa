@@ -7,6 +7,7 @@ use Omnipay\Common\Message\AbstractRequest;
 use Omnipay\PayKasa\Message\PayoutRequest;
 use Omnipay\PayKasa\Message\PurchaseRequest;
 use Omnipay\PayKasa\Message\FetchTransactionRequest;
+use Omnipay\PayKasa\Message\FetchVoucherProductsRequest;
 
 /**
  * Class Gateway
@@ -83,5 +84,15 @@ class Gateway extends AbstractGateway
     public function fetchTransaction(array $parameters = array())
     {
         return $this->createRequest('\Omnipay\PayKasa\Message\FetchTransactionRequest', $parameters);
+    }
+
+    /**
+     * @param array $parameters
+     *
+     * @return AbstractRequest|FetchVoucherProductsRequest
+     */
+    public function fetchVoucherProducts(array $parameters = array())
+    {
+        return $this->createRequest('\Omnipay\PayKasa\Message\FetchVoucherProductsRequest', $parameters);
     }
 }
