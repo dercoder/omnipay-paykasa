@@ -51,7 +51,7 @@ class PurchaseRequest extends AbstractRequest
      */
     public function getCustomerIpAddress()
     {
-        return $this->getParameter('customerIpAddress');
+        return $this->getParameter('clientIp');
     }
 
     /**
@@ -61,7 +61,7 @@ class PurchaseRequest extends AbstractRequest
      */
     public function setCustomerIpAddress($value)
     {
-        return $this->setParameter('customerIpAddress', $value);
+        return $this->setParameter('clientIp', $value);
     }
 
     /**
